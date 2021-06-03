@@ -10,15 +10,16 @@ var outPut = elementDiv[0];
 
 var listaNomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli','Ciano'];
 
-for (var n = 0; n < listaNomi.length; n++) ; {
-    var nome = prompt('Inserisci il tuo nome nella lista');
-    listaNomi.push(nome);
-    listaNomi.sort();
-    console.log(listaNomi[0]);
-}
-outPut.innerHTML += listaNomi;
 
-for (var x = 1; x < listaNomi.length; x++) ; {
-    console.log(listaNomi[1]);
-    outPut.innerHTML += '<br>' + 'il nome è ' + listaNomi[nome];
+for (var n = 0; n < listaNomi.length; n++) ; {
+    var nome = listaNomi.push(prompt('Inserisci il tuo cognome '));
+    listaNomi.sort();
+    var text= listaNomi ;
+}
+outPut.innerHTML = text ; 
+
+// posizione umana
+for (var x = 1; x <= listaNomi.length; x++) ; {
+    console.log(listaNomi[0]);
+    outPut.innerHTML += '<br>' + 'posizione del nome è ' + listaNomi.indexOf[nome];
 }
