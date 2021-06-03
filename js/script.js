@@ -35,3 +35,7 @@ console.log(nomeUtente);
 listaNomi.push(nomeUtente);
 listaNomi.sort();
 outPut.innerHTML = listaNomi;
+
+for (var n = 0; n < listaNomi.length; n++) {
+    var cognome = nomeUtente;
+}
