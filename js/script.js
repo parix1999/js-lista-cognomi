@@ -9,4 +9,6 @@ var listaNomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli','Ciano'];
 
 for (var n = 0; n < listaNomi.length; n++) ; {
     listaNomi.push(nome);
+    listaNomi.sort();
+    console.log(listaNomi);
 }
