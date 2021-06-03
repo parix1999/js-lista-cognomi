@@ -20,5 +20,5 @@ outPut.innerHTML = text ;
 // posizione umana
 for (var x = 1; x < listaNomi.length; x++) ; {
     console.log(listaNomi[0]);
-    outPut.innerHTML += '<br>' + 'posizione del nome è ' + listaNomi.indexOf['Rossi'];
+    outPut.innerHTML += '<br>' + 'posizione del nome è ' + listaNomi.indexOf[nome];
 }
