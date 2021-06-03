@@ -4,7 +4,6 @@
 // 4. scrivi anche la posizione “umana” (partendo da 1) della lista in cui il nuovo utente si trova
 
 
-
 var elementDiv = document.getElementsByClassName('risultato');
 var outPut = elementDiv[0];
 
@@ -19,7 +18,7 @@ for (var n = 0; n < listaNomi.length; n++) ; {
 outPut.innerHTML = text ; 
 
 // posizione umana
-for (var x = 1; x <= listaNomi.length; x++) ; {
+for (var x = 1; x < listaNomi.length; x++) ; {
     console.log(listaNomi[0]);
-    outPut.innerHTML += '<br>' + 'posizione del nome è ' + listaNomi.indexOf[nome];
+    outPut.innerHTML += '<br>' + 'posizione del nome è ' + listaNomi.indexOf['Rossi'];
 }
