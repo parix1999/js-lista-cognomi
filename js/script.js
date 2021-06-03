@@ -25,7 +25,7 @@
 var elementDiv = document.getElementsByClassName('risultato');
 var outPut = elementDiv[0];
 
-var listaNomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli','Ciano'];
+var listaNomi = ['bianchi', 'neri', 'rossi', 'verdi', 'gialli','ciano'];
 
 var nomeUtente = prompt('Inserisci il tuo nome');
 
@@ -33,4 +33,5 @@ console.log(listaNomi);
 console.log(nomeUtente);
 
 listaNomi.push(nomeUtente);
+listaNomi.sort();
 outPut.innerHTML = listaNomi;
