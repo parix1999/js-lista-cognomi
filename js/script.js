@@ -16,7 +16,8 @@ outPut.innerHTML= listaNomi ;
 // posizione
 for (var x = 1; x < listaNomi.length; x++) ; {
     console.log(listaNomi[0]);
-    outPut.innerHTML += '<br>' + 'posizione del nome è ' + listaNomi.indexOf(nome)+1;
+    var position = listaNomi.indexOf(nome) + 1;
+    outPut.innerHTML += '<br>' + 'posizione del nome è ' + position; 
 }
 
 
