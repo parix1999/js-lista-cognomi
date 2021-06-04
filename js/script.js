@@ -3,39 +3,45 @@
 // 3. stampa la lista ordinata alfabeticamente, sicuramente con una funzione
 // 4. scrivi anche la posizione “umana” (partendo da 1) della lista in cui il nuovo utente si trova
 
-
-// var elementDiv = document.getElementsByClassName('risultato');
-// var outPut = elementDiv[0];
-
-// var listaNomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli','Ciano'];
-// var nome = prompt('Inserisci il tuo cognome ');
-
-// listaNomi.push(nome);
-// listaNomi.sort();
-// outPut.innerHTML= listaNomi ;
-
- 
-
-// // posizione umana
-// for (var x = 1; x < listaNomi.length; x++) ; {
-//     console.log(listaNomi[0]);
-//     outPut.innerHTML += '<br>' + 'posizione del nome è ' + listaNomi.indexOf(nome);
-// }
-
 var elementDiv = document.getElementsByClassName('risultato');
 var outPut = elementDiv[0];
 
 var listaNomi = ['bianchi', 'neri', 'rossi', 'verdi', 'gialli','ciano'];
+var nome = prompt('Inserisci il tuo cognome ');
 
-var nomeUtente = prompt('Inserisci il tuo nome');
-
-console.log(listaNomi);
-console.log(nomeUtente);
-
-listaNomi.push(nomeUtente);
+listaNomi.push(nome);
 listaNomi.sort();
-outPut.innerHTML = listaNomi;
+outPut.innerHTML= listaNomi ;
 
-for (var n = 0; n < listaNomi.length; n++) {
-    var cognome = nomeUtente;
+// posizione
+for (var x = 1; x < listaNomi.length; x++) ; {
+    console.log(listaNomi[0]);
+    outPut.innerHTML += '<br>' + 'posizione del nome è ' + listaNomi.indexOf(nome)+1;
 }
+
+
+
+// -------------------------------------------------------------------------
+
+
+// var elementDiv = document.getElementsByClassName('risultato');
+// var outPut = elementDiv[0];
+
+// var listaNomi = ['bianchi', 'neri', 'rossi', 'verdi', 'gialli','ciano'];
+
+// var nomeUtente = prompt('Inserisci il tuo nome');
+
+// console.log(listaNomi);
+// console.log(nomeUtente);
+
+// listaNomi.push(nomeUtente);
+// listaNomi.sort();
+// outPut.innerHTML = listaNomi;
+
+// for (var n = 0; n < listaNomi.length; n++) {
+//     if (listaNomi[n] === n) {
+//         var cognome = nomeUtente;
+//         listaNomi.indexOf(cognome);
+//         outPut.innerHTML += cognome;
+//     }
+// }
